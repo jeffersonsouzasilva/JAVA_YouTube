@@ -23,12 +23,27 @@ public class Main {
 
         byte b = 100;
         short s = 10000;
-        int i = 100000;
+        int i = 5;
         long l = 100000L;
         float f = 10.5f;
         double d = 20.5;
         char c = 'A';
-        boolean bool = true;
+        String str = "Fernanda";
+        boolean bool = false;
+
+        int[] colecaoDeInteiros= {1, 2, 3, 4, 5, 3333};
+        int[] meusNumeros = new int[4];
+
+//        System.out.println("byte: " + b);
+        if (str.isBlank()){ // usar (str.isBlank()){  / (str.equals("Fernanda")){
+            System.out.println("Verdadeiro");
+        } else if (str == "Fernanda") {
+            System.out.println("Fernanda");
+        } else {
+            System.out.println("Falso");
+        }
+
+        System.out.println(colecaoDeInteiros[5]);
     }
 }// Declarar uma variavel
 

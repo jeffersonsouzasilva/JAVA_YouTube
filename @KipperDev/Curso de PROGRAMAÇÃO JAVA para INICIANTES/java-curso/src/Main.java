@@ -43,6 +43,7 @@ public class Main {
             System.out.println("Falso");
         }
 
+        
         System.out.println(colecaoDeInteiros[5]);
     }
 }// Declarar uma variavel

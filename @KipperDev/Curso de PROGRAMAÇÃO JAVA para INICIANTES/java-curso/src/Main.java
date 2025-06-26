@@ -1,5 +1,12 @@
+import java.util.ArrayList;
+
 // comando psvm = public static void main(String[] args)
 // comando sout = System.out.println();
+// comando Ctrl + D = Duplicar linha ou suplicar seleção
+// comando Ctrl + Shift + V =  para abrir o histórico de cópias e colar um item específico
+// comando Ctrl + Shift + / = comentar bloco de código (/**/)
+// comando Ctrl + / = comentar linha (//)
+
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +30,7 @@ public class Main {
 
         byte b = 100;
         short s = 10000;
-        int i = 5;
+//        int i = 5;
         long l = 100000L;
         float f = 10.5f;
         double d = 20.5;
@@ -31,20 +38,42 @@ public class Main {
         String str = "Fernanda";
         boolean bool = false;
 
-        int[] colecaoDeInteiros= {1, 2, 3, 4, 5, 3333};
-        int[] meusNumeros = new int[4];
+//        int[] colecaoDeInteiros= {1, 2, 3, 4, 5, 3333};
+//        int[] meusNumeros = new int[4];
 
 //        System.out.println("byte: " + b);
-        if (str.isBlank()){ // usar (str.isBlank()){  / (str.equals("Fernanda")){
-            System.out.println("Verdadeiro");
-        } else if (str == "Fernanda") {
-            System.out.println("Fernanda");
-        } else {
-            System.out.println("Falso");
-        }
+//        if (str.isBlank()){ // usar (str.isBlank()){  / (str.equals("Fernanda")){
+//            System.out.println("Verdadeiro");
+//        } else if (str == "Fernanda") {
+//            System.out.println("Fernanda");
+//        } else {
+//            System.out.println("Falso");
+//        }
+//
+//
+//        System.out.println(colecaoDeInteiros[5]);
 
-        
-        System.out.println(colecaoDeInteiros[5]);
+        String[] nomesArr = new String[10];
+
+        nomesArr[0] = "Fernanda";
+        nomesArr[1] = "Trstee";
+
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Fernanda");
+        nomes.add("Leo");
+        nomes.add("Joao");
+        nomes.add("Maria");
+
+        System.out.println(nomes.get(0));
+
+        nomes.remove(0);
+        nomes.remove("Leo");
+
+        System.out.println(nomes.get(0));
+
+        for (int meuInterador = 0; meuInterador < nomes.size(); meuInterador++){
+            System.out.println(nomes.get(meuInterador));
+        }
     }
-}// Declarar uma variavel
+}
 

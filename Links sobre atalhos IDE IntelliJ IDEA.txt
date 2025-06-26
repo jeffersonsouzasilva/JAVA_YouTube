@@ -1,0 +1,6 @@
+https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html
+https://www.dio.me/articles/salva-para-consultar-depois-atalhos-do-intellij
+https://www.dio.me/articles/atalhos-uteis-para-ide-intellij-idea
+https://gist.github.com/boaglio/5c70707ea5061940496e345a788c9b63
+https://soloweb.com.br/blog/2023/09/13/principais-atalho-do-intellij-idea/
+https://shortcuts.design/tools/toolspage-intellijidea/

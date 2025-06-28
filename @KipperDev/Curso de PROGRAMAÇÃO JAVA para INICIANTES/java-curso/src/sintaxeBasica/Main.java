@@ -1,3 +1,5 @@
+package sintaxeBasica;
+
 import java.util.ArrayList;
 
 // comando psvm = public static void main(String[] args)
@@ -86,6 +88,18 @@ public class Main {
             System.out.println("Estou no while");
             contador++;
         }
+
+        double resultado = 0.0;
+        int resultadoInt = (int) resultado;
+
+
+        int meuInt = 10;
+        double meuDouble = meuInt;
+
+        String meuString = "10";
+        int meuInt2 = Integer.parseInt(meuString);
+
+        String minhaString = String.valueOf(meuInt2);
     }
 }
 

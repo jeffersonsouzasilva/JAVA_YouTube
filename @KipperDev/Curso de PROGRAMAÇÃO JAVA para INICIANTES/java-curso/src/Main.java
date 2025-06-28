@@ -56,7 +56,9 @@ public class Main {
         String[] nomesArr = new String[10];
 
         nomesArr[0] = "Fernanda";
-        nomesArr[1] = "Trstee";
+        nomesArr[1] = "Feliz";
+        nomesArr[2] = "Joao";
+        nomesArr[8] = "Maria";
 
         ArrayList<String> nomes = new ArrayList<>();
         nomes.add("Fernanda");
@@ -64,15 +66,25 @@ public class Main {
         nomes.add("Joao");
         nomes.add("Maria");
 
-        System.out.println(nomes.get(0));
+/*        System.out.println(nomes.get(0));
 
         nomes.remove(0);
         nomes.remove("Leo");
 
-        System.out.println(nomes.get(0));
+        System.out.println(nomes.get(0));*/
 
-        for (int meuInterador = 0; meuInterador < nomes.size(); meuInterador++){
-            System.out.println(nomes.get(meuInterador));
+/*        for (int meuInterador = 0; meuInterador < nomesArr.length; meuInterador++){
+            System.out.println(nomesArr[meuInterador]);
+        }*/
+
+        for (String nome : nomesArr){
+            System.out.println(nome);
+        }
+
+        int contador = 0;
+        while (contador < 10){
+            System.out.println("Estou no while");
+            contador++;
         }
     }
 }

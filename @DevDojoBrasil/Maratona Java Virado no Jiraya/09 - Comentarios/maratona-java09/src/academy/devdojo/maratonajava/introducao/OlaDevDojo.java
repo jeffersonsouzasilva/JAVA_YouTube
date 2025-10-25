@@ -20,8 +20,7 @@ public class OlaDevDojo {
         de multiplas
         linhas
     */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         System.out.println("KA-ME-HA-ME-HA");
-
     }
 }

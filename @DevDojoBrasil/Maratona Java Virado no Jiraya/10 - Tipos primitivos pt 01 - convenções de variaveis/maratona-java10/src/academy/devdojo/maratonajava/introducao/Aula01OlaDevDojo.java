@@ -9,22 +9,21 @@ package academy.devdojo.maratonajava.introducao;
     Atalho ctrl + q ou passar o cursor acima do código = barra de informações referente ao código
     Atalho ctrl + shift + f10 = Executer ( Run )
     Atalho shift + f10 = Executer ( Tentei com esse código e deu Run )
-
 */
 
 /**
  * Isso é um comentário <b>javadoc</b>
  * Toggle Rendered View via Ctrl + Alt + Q ou seja para renderizar Ctrl + Alt + Q
  */
+
 public class Aula01OlaDevDojo {
-    //Isso é um Comentario em linha
+    //Isso é um comentario em linha
     /*
         Isso é um comentario
         de multiplas
         linhas
-    */
-    public static void main(String[] args) {
+     */
+    public static void main (String[] args){
         System.out.println("KA-ME-HA-ME-HA");
-
     }
 }

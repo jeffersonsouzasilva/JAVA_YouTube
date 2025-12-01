@@ -5,7 +5,7 @@ public class Aula04Operadores {
         // + - / *
         int numero1 = 10;
         int numero2 = 20;
-        double resultado = numero1 / (double) numero2;
+        double resultado = numero1 / numero2;
         System.out.println(resultado);
     }
 }

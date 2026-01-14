@@ -1,5 +1,10 @@
 package com.w3schools.javafullcourseforbeginners.lesson;
 
+/**
+ In today's lesson, we cover:
+ Java Variables
+ */
+
 public class Lesson3 {
     public static void main(String[] args) {
         String name = "John";

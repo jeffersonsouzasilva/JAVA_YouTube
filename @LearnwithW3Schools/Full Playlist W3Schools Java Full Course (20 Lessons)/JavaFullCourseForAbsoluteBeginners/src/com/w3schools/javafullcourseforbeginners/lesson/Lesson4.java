@@ -14,6 +14,7 @@ public class Lesson4 {
         boolean myBool = true;          // Boolean
         String myText = "Hello";        // String
 
+        System.out.println(" ");
         // Create integer variables
         int length = 4;
         int width = 6;

@@ -1,5 +1,12 @@
 package com.w3schools.javafullcourseforbeginners.lesson;
 
+/**
+ In today's lesson, we cover:
+ Java Operators
+
+ */
+
+
 public class Lesson6 {
     public static void main(String[] args) {
         int x = 100 * 50;

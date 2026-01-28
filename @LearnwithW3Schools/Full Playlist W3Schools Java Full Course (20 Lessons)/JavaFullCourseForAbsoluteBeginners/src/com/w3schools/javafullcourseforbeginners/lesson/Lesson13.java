@@ -1,5 +1,11 @@
 package com.w3schools.javafullcourseforbeginners.lesson;
 
+
+/**
+ In today's lesson, we cover:
+ Java Switch
+ */
+
 public class Lesson13 {
     public static void main(String[] args) {
 

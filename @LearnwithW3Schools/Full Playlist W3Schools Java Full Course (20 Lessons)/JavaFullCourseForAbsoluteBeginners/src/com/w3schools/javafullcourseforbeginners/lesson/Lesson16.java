@@ -25,6 +25,6 @@ public class Lesson16 {
             System.out.println(car);
         }
 
-        
+
     }
 }

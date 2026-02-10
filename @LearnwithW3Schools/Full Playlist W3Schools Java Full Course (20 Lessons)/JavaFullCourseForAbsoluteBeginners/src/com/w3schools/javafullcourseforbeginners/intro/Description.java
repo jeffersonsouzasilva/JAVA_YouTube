@@ -5,6 +5,9 @@ package com.w3schools.javafullcourseforbeginners.intro;
  This series is designed to help you learn Java from scratch, using the clean, simple, beginner-friendly explanations based on the W3Schools Java Tutorial.
 
  Whether you're starting your programming journey, preparing for exams, moving into software development, or switching careers, this full Java course will guide you through every essential concept—step-by-step, one lesson every day.
+
+ https://www.youtube.com/playlist?list=PLImps_mlpW35zgjSWqHGP4XHWAOXiObCF
+ https://www.w3schools.com/java/java_intro.asp
  */
 
 

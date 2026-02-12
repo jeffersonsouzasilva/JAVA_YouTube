@@ -38,6 +38,135 @@ public class StudentTeacher {
         //Java Booleans , 1 bit (0 or 1)
         boolean bool1 = true; // 1
         boolean bool2 = false; // 0
+
+        //Arthmetic Operator
+        //+, -, *, / %
+        //Operator Precedenace ,  ==> * , / , + , -
+        System.out.println("The multiplication is " + 5 * 10); //50
+        System.out.println("The adding is " + 5 + 5 * 10); //550
+        System.out.println("The adding again is " + 5 + 5 + 10); //5510
+        System.out.println(5 + 5 + 5 + " the anser is ");
+        System.out.println("The anser is " + (5 + 5 * 10));
+
+        // Relational Operator
+        /* Logical operators that return Boolean Value (true or false)
+         * > greater than
+         * < less than
+         * >= greatear than equal to
+         * <= less than equal to
+         * == Equal to
+         *
+         */
+        System.out.println(5 > 10);
+        System.out.println(5 >= 5);
+
+        // Logical Operator
+        /*
+         * & AND
+         * | OR
+         *
+         */
+        System.out.println("Logical Operator++++");
+        System.out.println(5 >= 5 & 15 <= 5 & 10 == 10);
+        System.out.println(5 >= 5 | 15 <= 5 | 100 == 10);
+
+        //Conditional statement if-else
+        int time = 20;
+        if (time < 18){
+            System.out.println("Good Time ");
+        }
+        else {
+            System.out.println("Not a Good Time");
+        }
+
+        //nested if else statements
+        //task. write a program to detrimne discont on ticket based on age
+        //age =< 12 = 75%
+        //age 13-18 = 50%
+        //age above 18 = 10%
+        int age = 21;
+        if (age <= 12){
+            System.out.println("You Get 75% Discount");
+        } else if (age >= 13 & age <= 18) {
+            System.out.println("You Get 50% Discount");
+        } else if (age > 18) {
+            System.out.println("You Get 10% Discount ");
+        }else {
+            System.out.println("Enter Number between 1 and 100");
+        }
+
+        //Switch Statements
+        int day = 2;
+        switch (day){
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            case 3:
+                System.out.println("Wednesday");
+                break;
+
+            case 4:
+                System.out.println("Thursday");
+                break;
+
+            case 5:
+                System.out.println("Friday");
+                break;
+
+            case 6:
+                System.out.println("Saturday");
+                break;
+
+            case 7:
+                System.out.println("Sunday");
+                break;
+
+            default:
+                System.out.println(" 1 - 7");
+                break;
+        }
+
+        //Loop Statement
+        //While Loop
+        //for
+        //do-while
+        int i=0;
+        while (i <= 10)
+        {
+            System.out.println("the value is " + i);
+            i++; //increment operator i = i + 1
+        }
+
+        //do-while
+        int i2 = 100;
+        do {
+            System.out.println("The value od do-while is " + i2);
+            i2++; //increment operator i = i + 1
+        }
+        while (i <= 10);
+
+        //for loop
+        /*
+        for(statement 1; statement 2; statement 3){
+
+        }
+         */
+        for (int i3 = 0; i3 <= 10; i3++){
+            System.out.println("The Value of is " + i3);
+        }
+
+        // task create a program to print table of any number
+        int table = 5;
+        for (int num = 1; num <=20 ; num ++){
+            System.out.println(table + " x " + num + " = " + (table * num) );
+        }
+
+
     }
 
     // Java Execution Flow
@@ -49,5 +178,4 @@ public class StudentTeacher {
 
      */
 
-    // Minuto 28:03 do video
 }

@@ -1,6 +1,3 @@
-
-//Parou em 30:18 do movie
-
 //** Create a Class */
 public class LearnWithW3schools {
     //** Java Class Attributes */

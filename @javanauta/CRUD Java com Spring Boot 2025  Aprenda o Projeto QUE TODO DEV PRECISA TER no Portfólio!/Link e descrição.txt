@@ -1,0 +1,18 @@
+GitHub: https://github.com/angelicaweiler/cadastro-usuario
+YouTube: https://www.youtube.com/watch?v=yW7RrWfUeHE
+
+🔧 Tecnologias usadas:
+Java 23 (JDK 23)
+Spring Boot
+H2 Database
+Spring Data JPA
+Lombok
+Maven
+
+📚 O que você vai aprender:
+Como estruturar um projeto com Spring Boot
+O que é um CRUD na prática (Create, Read, Update, Delete)
+Como configurar banco de dados H2
+
+💥 Esse projeto é básico, mas precisa estar no seu portfólio.  
+Se você ainda não tem um CRUD redondinho no seu GitHub, *esse é o vídeo que vai te ajudar a começar com o pé direito!*

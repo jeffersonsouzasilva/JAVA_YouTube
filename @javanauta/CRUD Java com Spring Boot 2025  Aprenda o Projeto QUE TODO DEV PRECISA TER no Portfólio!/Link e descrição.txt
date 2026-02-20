@@ -1,5 +1,6 @@
 GitHub: https://github.com/angelicaweiler/cadastro-usuario
 YouTube: https://www.youtube.com/watch?v=yW7RrWfUeHE
+Link estrutura do projeto: https://start.spring.io/
 
 🔧 Tecnologias usadas:
 Java 23 (JDK 23)

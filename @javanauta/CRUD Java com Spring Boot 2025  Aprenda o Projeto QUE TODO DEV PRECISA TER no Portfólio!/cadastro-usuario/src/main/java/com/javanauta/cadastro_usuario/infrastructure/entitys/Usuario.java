@@ -22,5 +22,3 @@ public class Usuario {
     @Column(name = "nome")
     private String nome;
 }
-
-//17:30 do movie

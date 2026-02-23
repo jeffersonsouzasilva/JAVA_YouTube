@@ -30,11 +30,11 @@ public class UsuarioService {
 
     public void atualizarUsuarioPorEmail(String email, Usuario usuario){
         Usuario usuarioEntity = buscarUsuarioPorEmail(email);
-        Usuario usuarioAtualizado = Usuario.builder()
-                .email(usuario.getEmail() != null ?
-                        usuario.getEmail() : usuarioEntity.getEmail())
-                .nome(usuario.getNome() != null ? usuario.getNome() :
-                        usuarioEntity.getNome())
-                .build()
+//        Usuario usuarioAtualizado = Usuario.builder()
+//                .email(usuario.getEmail() != null ?
+//                        usuario.getEmail() : usuarioEntity.getEmail())
+//                .nome(usuario.getNome() != null ? usuario.getNome() :
+//                        usuarioEntity.getNome())
+//                .build()
     }
 }

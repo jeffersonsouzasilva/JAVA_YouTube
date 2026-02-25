@@ -5,3 +5,7 @@ spring.datasourse.url=jdbc:h2:mem:testdb
 spring.datasourse.driverClassName=org.h2.Driver
 spring.datasourse.username=sa
 spring.datasourse.password
+
+
+//Se não starta por conta de a porta 8080 estar ocupada, acrescente:
+server.port = 8081

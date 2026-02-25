@@ -1,0 +1,10 @@
+Insomnia
+localhost:8080/usuario
+
+{"email" : "angelica@email.com",
+"nome" : "Angelica"}
+
+
+
+Para testar na Web
+localhost:8080/h2-console

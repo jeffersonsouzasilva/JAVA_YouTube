@@ -1,0 +1,7 @@
+GitHub: https://github.com/angelicaweiler/agendador-horarios
+YouTube: https://www.youtube.com/watch?v=5Cfo9ux8ezc&t=4s
+Link estrutura do projeto: https://start.spring.io/
+
+
+Nesse vídeo te mostro como fazer do zero um projeto top para seu portfólio. Daqueles projetos que todo recrutador busca. Usamos Java com Spring e a nova versão do Spring 4xx
+Bora lá encarar esse projetinho comigo?

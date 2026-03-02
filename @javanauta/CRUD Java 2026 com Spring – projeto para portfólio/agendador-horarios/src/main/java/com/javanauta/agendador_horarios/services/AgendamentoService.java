@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -15,5 +16,20 @@ public class AgendamentoService {
 
     public Agendamento salvarAgendamento(Agendamento agendamento){
         LocalDateTime horaAgendamento = agendamento.getDataHoraAgendamento();
+        LocalDateTime horaFim = agendamento.getDataHoraAgendamento().plusHours(1);
+
+        Agendamento agendados = agendamentoRepository.findByServicoAndDataHoraAgendamentoBetween(agendamento.getServico(),
+                horaAgendamento, horaFim);
+
+
+        if (Objects.nonNull(agendados)){
+            throw  new RuntimeException("Horário já está preenchido");
+        }
+        return agendamentoRepository.save(agendamento);
+    }
+
+    public void deletarAgendamento(LocalDateTime dataHoraAgendamento, String cliente){
+
+        agendamentoRepository.deleteByDataHoraAgendamentoAndCliente(dataHoraAgendamento, cliente);
     }
 }

@@ -1,15 +1,17 @@
 package com.javanauta.agendador_horarios.controller;
 
 import com.javanauta.agendador_horarios.infrastructure.entity.Agendamento;
-import com.javanauta.agendador_horarios.services.AgendamentoService
+import com.javanauta.agendador_horarios.services.AgendamentoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
+@RequestMapping("/agendamentos")
 @RequiredArgsConstructor
 public class AgendamentoController {
 

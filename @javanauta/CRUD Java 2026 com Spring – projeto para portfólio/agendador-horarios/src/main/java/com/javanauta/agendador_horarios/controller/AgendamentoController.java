@@ -8,10 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @RestController
-@RequestMapping("/agendamentos")
 @RequiredArgsConstructor
 public class AgendamentoController {
 
@@ -37,8 +35,8 @@ public class AgendamentoController {
     @PutMapping
     public ResponseEntity<Agendamento> alterarAgendanentos(@RequestBody Agendamento agendamento,
                                                            @RequestParam String cliente,
-                                                           @RequestParam LocalDateTime dataHorAgendamento){
+                                                           @RequestParam LocalDateTime dataHoraAgendamento){
         return ResponseEntity.accepted().body(agendamentoService.alterarAgendamento(agendamento,
-                cliente,dataHorAgendamento));
+                cliente,dataHoraAgendamento));
     }
 }

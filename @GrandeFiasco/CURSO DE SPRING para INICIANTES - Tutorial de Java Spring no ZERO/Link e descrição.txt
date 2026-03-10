@@ -1,0 +1,8 @@
+YouTube: https://www.youtube.com/watch?v=n8_qrrc8WN4&t=5s
+Link estrutura do projeto: https://start.spring.io/
+
+Descrição:
+O Spring Boot é um framework de código aberto baseado em Java, usado para desenvolver microsserviços com Spring Boot. Ele foi desenvolvido e é utilizado para criar aplicações Spring independentes e prontas para produção.
+Este tutorial de Spring Boot ensinará como começar a usar o Spring Boot e Java.
+
+http://localhost:8080/boasvindas

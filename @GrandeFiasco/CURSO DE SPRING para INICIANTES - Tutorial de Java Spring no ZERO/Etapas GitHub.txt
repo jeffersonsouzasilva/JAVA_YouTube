@@ -1,0 +1,52 @@
+horaciomuller / CadastroDeNinjas
+   Code
+     Commits
+	main
+	   first commit
+	   Criando a controller [Aula2]
+
+
+   Issues
+      Add a title -- #2 Configurar classe ninja
+      Add a description -- Definir a entidade Ninja com atributos como nome, idade e email //nome, clã, rank e técnicas.
+
+         Adicionar Milestones a ... esse Issues
+            Title -- Criar um banco de dados
+            Description -- Configurar o banco de dados(H2/MySQL) e as tabelas necessárias para a entidade Ninja.
+      
+
+      Add a title -- #3 Implementar Ninja Repository
+      Add a description -- Criar interface para interagir com o banco de dados de Ninjas.
+
+         Adicionar Milestones a ... esse Issues
+            Title -- Criar um banco de dados
+            Description -- Configurar o banco de dados(H2/MySQL) e as tabelas necessárias para a entidade Ninja.
+
+
+      Add a title -- #4 Implementar Ninja Service
+      Add a description -- Adicionar lógica de negócios para cadastro, atualização e exclusão de ninjas.
+
+         Adicionar Milestones a ... esse Issues
+            Title -- Criar um banco de dados
+            Description -- Configurar o banco de dados(H2/MySQL) e as tabelas necessárias para a entidade Ninja.
+
+
+      Add a title -- #5 Implementar Ninja Controller
+      Add a description -- Criar controlador REST para as operações de cadastro de ninjas via API.
+
+         Adicionar Milestones a ... esse Issues
+            Title -- Criar um banco de dados
+            Description -- Configurar o banco de dados(H2/MySQL) e as tabelas necessárias para a entidade Ninja.
+
+
+      Add a title -- #6 Criar Endpoints Ninjas
+      Add a description -- Definir endpoints RESTful para cadastro, leitura, atualização e remoção de ninjas.
+
+
+
+      Milestones
+         Title -- Criar um banco de dados
+         Description -- Configurar o banco de dados(H2/MySQL) e as tabelas necessárias para a entidade Ninja.
+
+
+

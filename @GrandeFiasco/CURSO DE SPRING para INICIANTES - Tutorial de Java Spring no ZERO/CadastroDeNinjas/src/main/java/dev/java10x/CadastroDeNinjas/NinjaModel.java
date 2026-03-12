@@ -39,3 +39,10 @@ public class NinjaModel {
         this.idade = idade;
     }
 }
+
+/*
+- Criar os atributos
+- Gerar um Constructor vazio
+- Gerar Constructor com todos os atributos
+- Gerar Getter e Setter para todos os atributos
+ */

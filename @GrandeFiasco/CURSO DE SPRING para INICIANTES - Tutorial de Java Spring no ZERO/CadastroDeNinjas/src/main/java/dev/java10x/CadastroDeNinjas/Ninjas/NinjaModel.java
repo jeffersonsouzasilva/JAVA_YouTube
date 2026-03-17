@@ -1,6 +1,9 @@
 package dev.java10x.CadastroDeNinjas.Ninjas;
 import dev.java10x.CadastroDeNinjas.Missaoes.MissoesModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -8,6 +11,9 @@ import java.util.List;
 // JPA = Java Persistence API
 @Entity
 @Table(name = "tb_cadastro")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,15 +28,26 @@ public class NinjaModel {
     @JoinColumn(name = "missoes_id") // Foreing Key ou chave estrangeira
     private MissoesModel missoes;
 
-
+    /*
+    // No args
     public NinjaModel() {
     }
 
+    // Quase allArgs
     public NinjaModel(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
     }
+
+
+//    public NinjaModel(Long id, String nome, String email, int idade, MissoesModel missoes) {
+//        this.id = id;
+//        this.nome = nome;
+//        this.email = email;
+//        this.idade = idade;
+//        this.missoes = missoes;
+//    }
 
     public String getNome() {
         return nome;
@@ -55,6 +72,21 @@ public class NinjaModel {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+
+//    @Override
+//    public String toString() {
+//        return "NinjaModel{" +
+//                "id=" + id +
+//                ", nome='" + nome + '\'' +
+//                ", email='" + email + '\'' +
+//                ", idade=" + idade +
+//                ", missoes=" + missoes +
+//                '}';
+//    }
+    */
+
+
 }
 
 /*

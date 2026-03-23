@@ -1,0 +1,10 @@
+YouTube:https://www.youtube.com/watch?v=YY_hf0FOIcU&t=67s
+Plalist JAVA + SPRING:https://www.youtube.com/playlist?list=PLNCSWIsR6ADI_wMAx9F-Iu8Hs9HHxj4sb
+Link estrutura do projeto: https://start.spring.io/
+
+Descrição:
+O Spring Boot é uma ferramenta essencial para quem programa em Java. Ele facilita a configuração e o desenvolvimento, e elimina a necessidade de configurar manualmente um grande número de dependências e frameworks, o que torna o processo muito mais ágil e eficiente. Com uma estrutura de inicialização automática, é possível criar aplicações web, APIs e microserviços rapidamente.
+
+Nesse curso de Spring para iniciantes, vamos aprender os principais conceitos do Java Spring para que você possa começar a utilizar esse framework no seu dia a dia para construir aplicações backend. Vamos abordar desde a configuração inicial do Java Spring Boot até a criação de endpoints REST, passando por injeção de dependência, configuração de propriedades, e muito mais. 
+
+Assista esse tutorial completo de Java Spring mesmo que você não tenha conhecimento em Java, pois esse vídeo vai te ajudar a dar os primeiros passos no mundo do Spring Boot, facilitando o desenvolvimento de aplicações backend modernas.​

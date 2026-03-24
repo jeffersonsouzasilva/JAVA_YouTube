@@ -1,0 +1,4 @@
+Link do repositório da aula: https://github.com/vsouzx/java-spring-aulas-youtube/tree/main/mini-curso-spring/spring-boot-essentials-web
+YouTube: https://www.youtube.com/watch?v=YuzWGKSzEcE&t=5s
+
+

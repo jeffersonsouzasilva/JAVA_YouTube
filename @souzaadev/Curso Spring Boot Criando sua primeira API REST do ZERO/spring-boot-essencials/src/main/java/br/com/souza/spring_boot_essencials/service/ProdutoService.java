@@ -31,5 +31,11 @@ public class ProdutoService {
                     .build()
     );
 
-    
+    public static List<ProdutoEntity> findAll() {
+        return new ArrayList<>(PRODUTOS);
+    }
+
+    public ProdutoEntity createProduct (ProdutoEntity produtoEntity){
+        return produtoEntity;
+    }
 }

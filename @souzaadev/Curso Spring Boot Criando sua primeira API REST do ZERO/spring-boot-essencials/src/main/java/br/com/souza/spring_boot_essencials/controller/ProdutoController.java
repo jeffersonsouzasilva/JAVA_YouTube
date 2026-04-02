@@ -19,13 +19,13 @@ public class ProdutoController {
 
     private final ProdutoService produtoService;
 
-//    @GetMapping
-//    @ResponseStatus(HttpStatus.OK)
-//    public List<ProdutoEntity> findAll(){
-//        //ProdutoService produtoService = new ProdutoService();
-//        return produtoService.findAll();
-//
-//    }
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<ProdutoEntity> findAll(){
+        //ProdutoService produtoService = new ProdutoService();
+        return produtoService.findAll();
+
+    }
 //
 //    @PostMapping
 //    @ResponseStatus(HttpStatus.CREATED)

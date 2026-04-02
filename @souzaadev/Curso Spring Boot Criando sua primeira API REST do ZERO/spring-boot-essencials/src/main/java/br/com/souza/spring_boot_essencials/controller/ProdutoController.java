@@ -26,13 +26,13 @@ public class ProdutoController {
         return produtoService.findAll();
 
     }
-//
-//    @PostMapping
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public ProdutoEntity createProduct(@RequestBody ProdutoDto produtoDto){
-//        return produtoService.createProduct(produtoDto);
-//    }
-//
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public ProdutoEntity createProduct(@RequestBody ProdutoDto produtoDto){
+        return produtoService.createProduct(produtoDto);
+    }
+
 //    @PutMapping("/{id}")
 //    @ResponseStatus(HttpStatus.CREATED)
 //    public ProdutoEntity updateProduct(@PathVariable Integer id,

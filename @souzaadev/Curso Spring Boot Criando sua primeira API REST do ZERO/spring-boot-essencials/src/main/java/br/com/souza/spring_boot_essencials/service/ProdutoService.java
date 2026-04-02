@@ -1,6 +1,7 @@
 package br.com.souza.spring_boot_essencials.service;
 
 import br.com.souza.spring_boot_essencials.database.model.ProdutoEntity;
+import br.com.souza.spring_boot_essencials.dto.ProdutoDto;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -60,7 +61,21 @@ public class ProdutoService {
         return new ArrayList<>(PRODUTOS);
     }
 
-    public ProdutoEntity createProduct (ProdutoEntity produtoEntity){
-        return produtoEntity;
+    public ProdutoEntity createProduct(ProdutoDto produtoDto) {
+        Integer identificador = PRODUTOS.stream()
+                .mapToInt(ProdutoEntity::getId)
+                .max()
+                .orElse(0) + 1;
+
+        ProdutoEntity novoProduto = ProdutoEntity.builder()
+                .id(identificador)
+                .nome(produtoDto.getNome())
+                .preco(produtoDto.getPreco())
+                .quantidade(produtoDto.getQuantidade())
+                .build();
+
+        PRODUTOS.add(novoProduto);
+
+        return novoProduto;
     }
 }

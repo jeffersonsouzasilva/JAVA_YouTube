@@ -33,17 +33,17 @@ public class ProdutoController {
         return produtoService.createProduct(produtoDto);
     }
 
-//    @PutMapping("/{id}")
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public ProdutoEntity updateProduct(@PathVariable Integer id,
-//                                       @RequestBody ProdutoDto produtoDto) throws NotFoundException{
-//        return produtoService.atualizarProduto(produtoDto, id);
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    @ResponseStatus(HttpStatus.NO_CONTENT)
-//    public void deleteProduct(@PathVariable Integer id){
-//        produtoService.removerProduto(id);
-//    }
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
+    public ProdutoEntity updateProduct(@PathVariable Integer id,
+                                       @RequestBody ProdutoDto produtoDto){
+        return produtoService.atualizarProduto(produtoDto, id);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteProduct(@PathVariable Integer id){
+        produtoService.removerProduto(id);
+    }
 
 }

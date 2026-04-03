@@ -16,7 +16,6 @@ public class ProdutoController {
 
 //    @Autowired
 //    private ProdutoService produtoService;
-
     private final ProdutoService produtoService;
 
     @GetMapping

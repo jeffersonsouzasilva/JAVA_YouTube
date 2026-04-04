@@ -2,6 +2,7 @@ package br.com.souza.spring_boot_essencials.service;
 
 import br.com.souza.spring_boot_essencials.database.model.ProdutoEntity;
 import br.com.souza.spring_boot_essencials.dto.ProdutoDto;
+import br.com.souza.spring_boot_essencials.exception.NotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -79,7 +80,7 @@ public class ProdutoService {
         return novoProduto;
     }
 
-    public ProdutoEntity atualizarProduto(ProdutoDto produtoDto, Integer id)  {
+    public ProdutoEntity atualizarProduto(ProdutoDto produtoDto, Integer id) throws NotFoundException {
         ProdutoEntity produto = PRODUTOS.stream()
                 .filter(p -> p.getId().equals(id))
                 .findAny()

@@ -2,6 +2,7 @@ package br.com.souza.spring_boot_essencials.controller;
 
 import br.com.souza.spring_boot_essencials.database.model.ProdutoEntity;
 import br.com.souza.spring_boot_essencials.dto.ProdutoDto;
+import br.com.souza.spring_boot_essencials.exception.NotFoundException;
 import br.com.souza.spring_boot_essencials.service.ProdutoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -35,7 +36,7 @@ public class ProdutoController {
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     public ProdutoEntity updateProduct(@PathVariable Integer id,
-                                       @RequestBody ProdutoDto produtoDto){
+                                       @RequestBody ProdutoDto produtoDto) throws NotFoundException {
         return produtoService.atualizarProduto(produtoDto, id);
     }
 

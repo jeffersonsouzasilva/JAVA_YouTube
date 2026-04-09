@@ -8,7 +8,7 @@ public class SistemaDeFarmaciaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SistemaDeFarmaciaApplication.class, args);
-//		System.out.println("Sistema de Farmacia !");
+		//System.out.println("Sistema de Farmacia !");
 	}
 
 }

@@ -5,6 +5,8 @@ import dobackaofront.SistemaDeFarmacia.model.Item;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 public class SistemaDeFarmaciaApplication {
 
@@ -19,10 +21,31 @@ public class SistemaDeFarmaciaApplication {
 //		banco.cadastrar(dipirona);
 //		banco.cadastrar(bromoprida);
 
-		Item tilenol = new Item("Tilenol",150,"Frasco");
+//		Item tilenol = new Item("Tilenol",150,"Frasco");
+
+//		BancoDeDados banco = new BancoDeDados();
+//		banco.cadastrar(tilenol);
+
+//		BancoDeDados banco = new BancoDeDados();
+//		ArrayList<Item> itens = banco.ler();
+
+//		for (int i=0; i<itens.size(); i++){
+//			System.out.println("Index: "+i+" - Nome: "+itens.get(i).getNome()+", Quantidade: "+itens.get(i).getQuantidade()+" - Tipo: "+itens.get(i).getTipo());
+//		}
 
 		BancoDeDados banco = new BancoDeDados();
-		banco.cadastrar(tilenol);
+		ArrayList<Item> itens = banco.ler();
+
+
+
+		Item item = banco.pesquisar(3,itens);
+		System.out.println(item.getNome());
+
+		if (item != null){
+			System.out.println(item.getNome());
+		}else {
+			System.out.println("Não tem medicamento cadastrado com este código!");
+		}
 
 	}
 }

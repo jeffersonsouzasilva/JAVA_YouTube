@@ -33,19 +33,22 @@ public class SistemaDeFarmaciaApplication {
 //			System.out.println("Index: "+i+" - Nome: "+itens.get(i).getNome()+", Quantidade: "+itens.get(i).getQuantidade()+" - Tipo: "+itens.get(i).getTipo());
 //		}
 
+
+//		BancoDeDados banco = new BancoDeDados();
+//		ArrayList<Item> itens = banco.ler();
+//
+//		Item item = banco.pesquisar(3,itens);
+//
+//		if (item != null){
+//			System.out.println(item.getNome());
+//		}else {
+//			System.out.println("Não tem medicamento cadastrado com este código!");
+//		}
+
 		BancoDeDados banco = new BancoDeDados();
 		ArrayList<Item> itens = banco.ler();
-
-
-
-		Item item = banco.pesquisar(3,itens);
-		System.out.println(item.getNome());
-
-		if (item != null){
-			System.out.println(item.getNome());
-		}else {
-			System.out.println("Não tem medicamento cadastrado com este código!");
-		}
+		
+		banco.excluir(1,itens);
 
 	}
 }

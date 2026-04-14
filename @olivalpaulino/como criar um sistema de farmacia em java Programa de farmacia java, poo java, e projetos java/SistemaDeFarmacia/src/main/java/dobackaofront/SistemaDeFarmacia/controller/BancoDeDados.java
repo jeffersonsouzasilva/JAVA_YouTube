@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public class BancoDeDados {
     private Item item;
     public BancoDeDados(){}
-    public void cadastrar(Item item){
+    public void cadastrar(Item item, boolean opcao){
         try {
-            OutputStream os = new FileOutputStream("medicamentos.txt",true);
+            OutputStream os = new FileOutputStream("medicamentos.txt", opcao);
             OutputStreamWriter osw = new OutputStreamWriter(os);
             BufferedWriter bw = new BufferedWriter(osw);
 
@@ -40,7 +40,17 @@ public class BancoDeDados {
         }
 
     }
-    public void excluir(int codigo){}
+    public void excluir(int codigo, ArrayList<Item> itens){
+        itens.remove(codigo);
+
+        for (int i=0; i<itens.size(); i++){
+            if (i == 0){
+                cadastrar(itens.get(i), false);
+            } else {
+                cadastrar(itens.get(i), true);
+            }
+        }
+    }
     public ArrayList<Item> ler(){
         try {
             InputStream is = new FileInputStream("medicamentos.txt");

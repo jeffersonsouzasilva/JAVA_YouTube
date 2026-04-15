@@ -45,10 +45,15 @@ public class SistemaDeFarmaciaApplication {
 //			System.out.println("Não tem medicamento cadastrado com este código!");
 //		}
 
+//		BancoDeDados banco = new BancoDeDados();
+//		ArrayList<Item> itens = banco.ler();
+//
+//		banco.excluir(1,itens);
+
 		BancoDeDados banco = new BancoDeDados();
 		ArrayList<Item> itens = banco.ler();
-		
-		banco.excluir(1,itens);
+
+		banco.editar(1,itens);
 
 	}
 }

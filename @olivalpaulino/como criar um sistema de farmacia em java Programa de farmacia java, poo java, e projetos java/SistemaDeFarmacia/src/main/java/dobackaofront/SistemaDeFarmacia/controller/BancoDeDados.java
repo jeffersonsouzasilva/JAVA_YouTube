@@ -30,7 +30,23 @@ public class BancoDeDados {
         }
 
     }
-    public void editar(int codigo){}
+    public void editar(int codigo, ArrayList<Item> itens){
+        Item item = itens.get(codigo);
+        itens.remove(codigo);
+        item.setNome("Tilenol 200lm XPSKT2");
+        item.setQuantidade(300);
+        item.setTipo("Frasco de 200ml");
+
+        itens.add(codigo,item);
+
+        for (int i=0; i<itens.size(); i++){
+            if (i == 0){
+                cadastrar(itens.get(i), false);
+            } else {
+                cadastrar(itens.get(i), true);
+            }
+        }
+    }
     public Item pesquisar(int codigo, ArrayList<Item> itens){
         try {
             Item item = itens.get(codigo);

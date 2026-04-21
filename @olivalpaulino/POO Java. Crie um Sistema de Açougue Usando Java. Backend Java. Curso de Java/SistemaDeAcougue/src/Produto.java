@@ -37,5 +37,5 @@ public class Produto {
                 ", precoPorKg=" + precoPorKg +
                 '}';
     }
-    
+
 }

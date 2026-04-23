@@ -13,6 +13,11 @@ public class Produto {
         this.precoPorKg = precoPorKg;
     }
 
+    public Produto() {
+        nome = "";
+        precoPorKg = 0;
+    }
+
     //metodos get e set
     public String getNome() {
         return nome;

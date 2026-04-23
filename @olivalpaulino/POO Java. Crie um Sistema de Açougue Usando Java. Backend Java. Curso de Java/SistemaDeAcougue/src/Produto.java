@@ -38,4 +38,8 @@ public class Produto {
                 '}';
     }
 
+    //metodo especifico da classe
+    public double calcularPreco(double quantidadeKg){
+        return precoPorKg * quantidadeKg;
+    }
 }

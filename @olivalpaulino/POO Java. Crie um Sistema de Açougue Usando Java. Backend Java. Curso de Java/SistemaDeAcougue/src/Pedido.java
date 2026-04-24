@@ -6,6 +6,10 @@ public class Pedido {
     private List<Produto> produtos = new ArrayList<>();
     private List<Double> quantidades = new ArrayList<>();
 
+    public Pedido() {
+
+    }
+
     public void adicionarProduto(Produto produto, double quantidadeKg){
         produtos.add(produto);
         quantidades.add(quantidadeKg);

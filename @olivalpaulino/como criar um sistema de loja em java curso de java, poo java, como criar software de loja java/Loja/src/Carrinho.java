@@ -22,10 +22,14 @@ public class Carrinho {
             }
         }
 
-        if (codigo == +1){
+        if (codigo == -1){
             return null;
         } else {
             return "O produto "+nome+" foi removido do carrinho!";
         }
+    }
+
+    public ArrayList<Produto> getProdutos(){
+        return produtos;
     }
 }

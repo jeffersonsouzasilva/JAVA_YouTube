@@ -4,6 +4,14 @@ public class Main {
         Produto p1 = new Produto("Chaveiro Seja Forte e Corajosa","Madeira, cordão, adesivo",15.90);
         Produto p2 = new Produto("Terço Mães que Oram pelos Filhos","cordão, metal e adesivo resinado",32.90);
 
-        System.out.println("Loja Javeiros");
+        Carrinho c = new Carrinho();
+        c.adicionar(p1);
+        c.adicionar(p2);
+        c.remover("Chaveiro Seja forte e Corajosa");
+
+        Venda v = new Venda(c);
+        v.totalPreco();
+
+        //System.out.println("Loja Javeiros");
     }
 }

@@ -12,7 +12,7 @@ public class Venda {
         double total = 0;
 
         for (int i=0; i<p.size(); i++){
-            total =+ p.get(i).getPreco();
+            total += p.get(i).getPreco();
         }
 
         System.out.println("O total da compra foi R$: "+total);

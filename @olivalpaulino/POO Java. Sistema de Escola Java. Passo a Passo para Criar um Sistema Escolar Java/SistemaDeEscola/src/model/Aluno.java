@@ -11,4 +11,28 @@ public class Aluno extends Pessoa{
         this.turma = turma;
         this.disciplinas = disciplinas;
     }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
+    }
+
+    public ArrayList<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
+
+    public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "turma=" + turma +
+                ", disciplinas=" + disciplinas +
+                '}';
+    }
 }

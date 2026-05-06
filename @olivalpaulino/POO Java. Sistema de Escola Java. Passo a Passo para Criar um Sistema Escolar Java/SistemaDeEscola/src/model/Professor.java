@@ -12,5 +12,27 @@ public class Professor extends Pessoa{
         this.disciplina = disciplina;
     }
 
+    public ArrayList<Turma> getTurmas() {
+        return turmas;
+    }
 
+    public void setTurmas(ArrayList<Turma> turmas) {
+        this.turmas = turmas;
+    }
+
+    public Disciplina getDisciplina() {
+        return disciplina;
+    }
+
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "turmas=" + turmas +
+                ", disciplina=" + disciplina +
+                '}';
+    }
 }

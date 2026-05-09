@@ -49,4 +49,31 @@ public class Disciplina {
         this.cadernetas = cadernetas;
     }
 
+    public void adicionarAluno(Aluno aluno){
+        alunos.add(aluno);
+    }
+
+    public void removerAluno(Aluno aluno){
+        alunos.remove(aluno);
+    }
+
+    public void pesquisarAluno(){}
+
+    public void adicionarCaderneta(Caderneta caderneta){
+        cadernetas.add(caderneta);
+    }
+
+    public void removerCaderneta(Caderneta caderneta){
+        cadernetas.remove(caderneta);
+    }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" +
+                "codigo='" + codigo + '\'' +
+                ", alunos=" + alunos +
+                ", professor=" + professor +
+                ", cadernetas=" + cadernetas +
+                '}';
+    }
 }

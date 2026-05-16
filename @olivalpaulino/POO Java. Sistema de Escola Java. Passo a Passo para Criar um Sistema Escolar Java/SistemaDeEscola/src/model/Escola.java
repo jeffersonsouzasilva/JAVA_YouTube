@@ -81,4 +81,17 @@ public class Escola {
     public void setCadernetas(ArrayList<Caderneta> cadernetas) {
         this.cadernetas = cadernetas;
     }
+
+    @Override
+    public String toString() {
+        return "Escola{" +
+                "nome='" + nome + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", turmas=" + turmas +
+                ", alunos=" + alunos +
+                ", professores=" + professores +
+                ", disciplinas=" + disciplinas +
+                ", cadernetas=" + cadernetas +
+                '}';
+    }
 }

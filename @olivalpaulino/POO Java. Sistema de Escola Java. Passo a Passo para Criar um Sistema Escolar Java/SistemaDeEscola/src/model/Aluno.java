@@ -14,6 +14,10 @@ public class Aluno extends Pessoa{
         this.disciplinas = disciplinas;
     }
 
+    public Aluno(String nome, String codigo){
+        super(nome, codigo);
+    }
+
     public Turma getTurma() {
         return turma;
     }

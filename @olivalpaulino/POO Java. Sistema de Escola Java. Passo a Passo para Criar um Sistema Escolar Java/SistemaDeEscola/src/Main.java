@@ -1,4 +1,4 @@
-import model.Aluno;
+import model.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,5 +11,25 @@ public class Main {
         Aluno aluno7 = new Aluno("juliana","7");
         Aluno aluno50 = new Aluno("jessica","8");
 
+        Disciplina disciplina1;
+        Disciplina disciplina2;
+        Disciplina disciplina3;
+
+        Turma turma1;
+        Turma turma2;
+        Turma turma3;
+
+        Professor professor1;
+        Professor professor2;
+        Professor professor3;
+
+        Caderneta caderneta1;
+        Caderneta caderneta2;
+        Caderneta caderneta3;
+
+        Escola escola1;
+        Escola escola2;
+        Escola escola3;
+        
     }
 }

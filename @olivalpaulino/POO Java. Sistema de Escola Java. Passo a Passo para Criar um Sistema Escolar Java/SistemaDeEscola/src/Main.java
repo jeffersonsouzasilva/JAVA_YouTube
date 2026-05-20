@@ -30,6 +30,7 @@ public class Main {
         Escola escola1;
         Escola escola2;
         Escola escola3;
-        
+
+        EcossistemaEscola ecosistema = new EcossistemaEscola();
     }
 }

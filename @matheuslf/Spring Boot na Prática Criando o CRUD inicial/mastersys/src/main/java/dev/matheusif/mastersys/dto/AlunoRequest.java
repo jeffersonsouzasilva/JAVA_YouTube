@@ -27,7 +27,7 @@ public record AlunoRequest (
     }
 
     public void preencher(Aluno aluno){
-        
+
     }
 
 

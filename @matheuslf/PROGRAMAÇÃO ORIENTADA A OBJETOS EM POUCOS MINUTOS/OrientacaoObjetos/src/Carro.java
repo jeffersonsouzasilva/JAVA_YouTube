@@ -4,12 +4,16 @@ public class Carro {
     private String modelo;
     private int ano;
     private  double velocidade;
+    private Volante volante;
+    private Pedais pedais;
 
-    public Carro(String marca, String modelo, int ano, double velocidade) {
+    public Carro(String marca, String modelo, int ano, double velocidade, Volante volante, Pedais pedais) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.velocidade = velocidade;
+        this.volante = volante;
+        this.pedais = pedais;
     }
 
     public String getMarca() {

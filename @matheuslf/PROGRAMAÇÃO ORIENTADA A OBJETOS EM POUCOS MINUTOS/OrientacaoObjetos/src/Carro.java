@@ -7,6 +7,8 @@ public class Carro {
     private Volante volante;
     private Pedais pedais;
 
+    public Carro(){}
+
     public Carro(String marca, String modelo, int ano, double velocidade, Volante volante, Pedais pedais) {
         this.marca = marca;
         this.modelo = modelo;

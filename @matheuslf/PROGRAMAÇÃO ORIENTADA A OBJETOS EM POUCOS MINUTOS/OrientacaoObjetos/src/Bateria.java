@@ -1,5 +1,4 @@
 public class Bateria {
-
     private int capacidade;
     private int nivelCarga;
 

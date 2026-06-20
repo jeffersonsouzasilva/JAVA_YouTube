@@ -7,5 +7,11 @@ public abstract class Veiculo {
         this.modelo = modelo;
         this.velocidade = velocidade;
     }
-    
+
+    public void acelerar(){
+        velocidade += 10;
+        System.out.println("Veículo acelerado! Velocidade: "
+                + velocidade);
+    }
+
 }

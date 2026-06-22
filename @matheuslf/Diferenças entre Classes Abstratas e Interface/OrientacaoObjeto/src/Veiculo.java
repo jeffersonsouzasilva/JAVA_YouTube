@@ -14,4 +14,6 @@ public abstract class Veiculo {
                 + velocidade);
     }
 
+    public abstract void frear();
+
 }

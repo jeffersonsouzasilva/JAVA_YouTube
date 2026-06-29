@@ -6,6 +6,7 @@ public class Carro extends Veiculo {
 
     @Override
     public void frear() {
-        
+        velocidade -= 5;
+        System.out.println("Freando carro...");
     }
 }

@@ -9,4 +9,10 @@ public class CarroEletrico extends Veiculo implements Eletrico {
     public void frear() {
         velocidade -= 8;
     }
+
+    @Override
+    public void carregarBateria() {
+        bateria = 100;
+        System.out.println("Carregando a bateria do carro...");
+    }
 }

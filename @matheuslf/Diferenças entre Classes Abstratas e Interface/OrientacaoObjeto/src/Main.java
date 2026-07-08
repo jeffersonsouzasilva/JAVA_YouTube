@@ -7,6 +7,8 @@ public class Main {
         CarroEletrico tesla = new CarroEletrico("Tesla");
         tesla.acelerar();
         tesla.frear();
+        tesla.carregarBateria();
+        tesla.statusBateria();
         
     }
 }

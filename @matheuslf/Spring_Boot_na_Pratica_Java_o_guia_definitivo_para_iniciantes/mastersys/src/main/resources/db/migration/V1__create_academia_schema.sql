@@ -1,0 +1,41 @@
+CREATE TABLE alunos(
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    data_nascimento DATE,
+    sexo VARCHAR(1) CHECK (sexo IN('M','F')),
+    telefone VARCHAR(30),
+    celular VARCHAR(30),
+    email VARCHAR(150),
+    observacao TEXT,
+    endereco VARCHAR(150),
+    numero VARCHAR(20),
+    complemento VARCHAR(100),
+    bairro VARCHAR(100),
+    cidade VARCHAR(100),
+    estado VARCHAR(20),
+    cep VARCHAR(20),
+    criando_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em TIMESTAMP
+);
+
+CREATE TABLE modalidades(
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL UNIQUE,
+    ativo BOOLEAN NOT DEFAULT TRUE
+);
+
+CREATE TABLE graduacao(
+    id BIGSERIAL PRIMARY KEY,
+    modalidade_id BIGINT NOT NULL REFERENCES modalidades(id),
+    nome VARCHAR(100) NOT NULL,
+    UNIQUE (modalidade_id,nome)
+);
+
+CREATE TABLE planos(
+    id BIGSERIAL PRIMARY KEY,
+    modalidade_id BIGINT NOT NULL REFERENCES modalidades(id),
+    nome VARCHAR(100) NOT NULL,
+    valor_mensal NUMERIC(10,2) NOT NULL CHECK(valor_mensal >= 0),
+    ativo BOOLEAN NOT NULL DEFAULT TRUE,
+    UNIQUE (modalidade_id, nome)
+);

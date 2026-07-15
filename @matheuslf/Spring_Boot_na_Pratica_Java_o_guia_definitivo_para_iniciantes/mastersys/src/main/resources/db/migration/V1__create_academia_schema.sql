@@ -39,3 +39,13 @@ CREATE TABLE planos(
     ativo BOOLEAN NOT NULL DEFAULT TRUE,
     UNIQUE (modalidade_id, nome)
 );
+
+CREATE TABLE matriculas(
+    id BIGSERIAL PRIMARY KEY,
+    aluno_id BIGINT NOT NULL REFERENCES alunos(id),
+    data_matricula DATE NOT NULL DEFAULT CURRENT_DATE,
+    dia_vencimento INTEGER NOT NULL CHECK (dia_vencimento BETWEEN 1 AND 31),
+    data_encerramento DATE,
+    status VARCHAR(20) NOT NULL DEFAULT 'ATIVA',
+    CHECK (status IN ('ATIVA', 'ENCERRADA', 'CANCELADA'))
+);

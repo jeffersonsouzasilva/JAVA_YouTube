@@ -49,3 +49,14 @@ CREATE TABLE matriculas(
     status VARCHAR(20) NOT NULL DEFAULT 'ATIVA',
     CHECK (status IN ('ATIVA', 'ENCERRADA', 'CANCELADA'))
 );
+
+CREATE TABLE matriculas_modalidades(
+    id BIGSERIAL PRIMARY KEY,
+    matricula_id BIGINT NOT NULL REFERENCES matriculas(id),
+    modalidade_id BIGINT NOT NULL REFERENCES modalidades(id),
+    graduacao_id BIGINT NOT NULL REFERENCES graduacao(id),
+    plano_id BIGINT NOT NULL REFERENCES planos(id),
+    data_inicio DATE NOT NULL DEFAULT CURRENT_DATE,
+    data_fim DATE,
+    UNIQUE (matricula_id, modalidade_id)
+);

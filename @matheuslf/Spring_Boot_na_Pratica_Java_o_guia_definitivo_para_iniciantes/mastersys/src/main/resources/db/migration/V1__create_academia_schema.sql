@@ -60,3 +60,16 @@ CREATE TABLE matriculas_modalidades(
     data_fim DATE,
     UNIQUE (matricula_id, modalidade_id)
 );
+
+CREATE TABLE faturas_matriculas(
+    id BIGSERIAL PRIMARY KEY,
+    matricula_id BIGINT NOT NULL REFERENCES matriculas(id),
+    data_vencimento DATE NOT NULL,
+    valor NUMERIC(10,2) NOT NULL CHECK ( valor >= 0 ),
+    data_pagamento TIMESTAMP,
+    data_cancelamento DATE,
+    status VARCHAR(20) NOT NULL DEFAULT 'ABERTA',
+    CHECK ( status IN ('ABERTA', 'PAGA', 'CANCELADA', 'VENCIDA') ),
+    UNIQUE (matricula_id, data_vencimento)
+);
+

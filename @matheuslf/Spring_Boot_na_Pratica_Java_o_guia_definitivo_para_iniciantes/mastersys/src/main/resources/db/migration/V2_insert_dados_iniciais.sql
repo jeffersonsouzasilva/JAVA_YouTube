@@ -5,5 +5,5 @@ INSERT INTO modalidades (nome) VALUES
 (nome 'Muay Thai'),
 (nome 'Pilates');
 
-
-
+INSERT INTO planos (modalidade_id, nome, valor_mensal)
+SELECT id, 'Mensal', 120.00 FROM modalidades WHERE nome = 'Musculação';

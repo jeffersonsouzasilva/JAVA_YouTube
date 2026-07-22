@@ -7,3 +7,6 @@ INSERT INTO modalidades (nome) VALUES
 
 INSERT INTO planos (modalidade_id, nome, valor_mensal)
 SELECT id, 'Mensal', 120.00 FROM modalidades WHERE nome = 'Musculação';
+
+INSERT INTO planos (modalidade_id, nome, valor_mensal)
+SELECT id, 'Trimestral', 330.00 FROM modalidades WHERE nome = 'Musculação';

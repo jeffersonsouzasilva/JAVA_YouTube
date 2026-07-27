@@ -19,3 +19,6 @@ SELECT id, 'Mensal', 180.00 FROM modalidades WHERE nome = 'Jiu-Jitsu';
 
 INSERT INTO graduacoes (modalidade_id, nome)
 SELECT id, 'Faixa Branca' FROM modalidades WHERE nome = 'Jiu-Jitsu';
+
+INSERT INTO graduacoes (modalidade_id, nome)
+SELECT id, 'Faixa Azul' FROM modalidades WHERE nome = 'Jiu-Jitsu';

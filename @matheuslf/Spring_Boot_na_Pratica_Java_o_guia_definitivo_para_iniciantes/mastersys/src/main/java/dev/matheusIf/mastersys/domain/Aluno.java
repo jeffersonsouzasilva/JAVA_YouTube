@@ -16,4 +16,7 @@ public class Aluno {
     @Column(name = "data_nascimento")
     private LocalDate dataNascimento;
 
+    @Column(name = "sexo", length = 1)
+    private String sexo;
+
 }

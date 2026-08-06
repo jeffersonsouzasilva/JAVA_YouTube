@@ -18,5 +18,14 @@ public class Aluno {
 
     @Column(name = "sexo", length = 1)
     private String sexo;
+    private String telefone;
+    private String celular;
+    private String email;
+    private String observacao;
+    private String endereco;
+    private String numero;
+    private String complemento;
+    private String bairro;
+    private String cidade;
 
 }

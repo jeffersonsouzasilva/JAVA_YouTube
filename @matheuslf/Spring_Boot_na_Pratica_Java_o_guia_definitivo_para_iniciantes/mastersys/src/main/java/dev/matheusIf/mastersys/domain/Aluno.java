@@ -28,4 +28,7 @@ public class Aluno {
     private String bairro;
     private String cidade;
 
+    @Column(name = "estado", length = 2)
+    private String estado;
+    private String cep;
 }

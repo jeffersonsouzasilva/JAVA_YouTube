@@ -35,4 +35,7 @@ public class Aluno {
 
     @Column(name = "criado_em")
     private LocalDateTime criadoEm;
+
+    @Column(name = "atualizado_em")
+    private LocalDateTime atualizadoEm;
 }

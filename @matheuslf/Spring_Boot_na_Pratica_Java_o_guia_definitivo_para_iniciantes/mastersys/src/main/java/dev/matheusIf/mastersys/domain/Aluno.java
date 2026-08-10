@@ -38,4 +38,9 @@ public class Aluno {
 
     @Column(name = "atualizado_em")
     private LocalDateTime atualizadoEm;
+
+    @PrePersist
+    public void prePersist(){
+        criadoEm = LocalDateTime.now();
+    }
 }

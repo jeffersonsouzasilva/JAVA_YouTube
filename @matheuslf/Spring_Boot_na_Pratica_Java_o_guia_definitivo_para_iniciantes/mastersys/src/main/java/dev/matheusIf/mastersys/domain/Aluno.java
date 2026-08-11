@@ -43,4 +43,9 @@ public class Aluno {
     public void prePersist(){
         criadoEm = LocalDateTime.now();
     }
+
+    @PreUpdate
+    public void preUpdate(){
+        atualizadoEm = LocalDateTime.now();
+    }
 }

@@ -10,4 +10,6 @@ public class Modalidade {
     private Long id;
 
     private String nome;
+
+    private Boolean ativo = true;
 }

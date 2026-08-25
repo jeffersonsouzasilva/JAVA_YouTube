@@ -10,4 +10,8 @@ public class Graduacao {
     private Long id;
 
     private String nome;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "modalidade_id")
+    private Modalidade modalidade;
 }

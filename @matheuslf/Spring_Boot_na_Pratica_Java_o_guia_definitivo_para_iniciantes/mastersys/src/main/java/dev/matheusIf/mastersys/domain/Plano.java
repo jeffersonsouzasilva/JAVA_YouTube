@@ -14,13 +14,15 @@ public class Plano {
 
     private String nome;
 
+    private Boolean ativo = true;
+
     @Column(name = "valor_mensal")
     private BigDecimal valorMensal;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "modalidade_id")
     private Modalidade modalidade;
-    
+
 
     public Long getId() {
         return id;

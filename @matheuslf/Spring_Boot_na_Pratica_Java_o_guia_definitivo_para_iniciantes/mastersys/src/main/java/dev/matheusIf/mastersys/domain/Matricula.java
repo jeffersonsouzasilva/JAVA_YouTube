@@ -16,4 +16,7 @@ public class Matricula {
 
     @Column(name = "dia_vencimento")
     private Integer diaVencimento;
+
+    @Column(name = "data_encerramento")
+    private LocalDate dataEncerramento;
 }

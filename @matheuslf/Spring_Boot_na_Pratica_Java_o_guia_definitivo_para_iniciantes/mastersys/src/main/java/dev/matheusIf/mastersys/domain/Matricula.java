@@ -1,5 +1,6 @@
 package dev.matheusIf.mastersys.domain;
 
+import dev.matheusIf.mastersys.domain.enums.StatusMatricula;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -19,4 +20,7 @@ public class Matricula {
 
     @Column(name = "data_encerramento")
     private LocalDate dataEncerramento;
+
+    @Enumerated(EnumType.STRING)
+    private StatusMatricula status = StatusMatricula.ATIVA;
 }

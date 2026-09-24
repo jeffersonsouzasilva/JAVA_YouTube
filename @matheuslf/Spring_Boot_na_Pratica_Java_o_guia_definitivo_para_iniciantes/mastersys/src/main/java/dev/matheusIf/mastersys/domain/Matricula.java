@@ -27,4 +27,11 @@ public class Matricula {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "aluno_id")
     private Aluno aluno;
+
+    @PrePersist
+    public void prePersist(){
+        if(dataMatricula == null){
+            dataMatricula = LocalDate.now();
+        }
+    }
 }

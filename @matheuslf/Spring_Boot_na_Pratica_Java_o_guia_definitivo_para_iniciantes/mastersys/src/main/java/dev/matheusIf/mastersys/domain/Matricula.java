@@ -34,4 +34,52 @@ public class Matricula {
             dataMatricula = LocalDate.now();
         }
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDate getDataMatricula() {
+        return dataMatricula;
+    }
+
+    public void setDataMatricula(LocalDate dataMatricula) {
+        this.dataMatricula = dataMatricula;
+    }
+
+    public Integer getDiaVencimento() {
+        return diaVencimento;
+    }
+
+    public void setDiaVencimento(Integer diaVencimento) {
+        this.diaVencimento = diaVencimento;
+    }
+
+    public LocalDate getDataEncerramento() {
+        return dataEncerramento;
+    }
+
+    public void setDataEncerramento(LocalDate dataEncerramento) {
+        this.dataEncerramento = dataEncerramento;
+    }
+
+    public StatusMatricula getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusMatricula status) {
+        this.status = status;
+    }
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
 }

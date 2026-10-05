@@ -17,4 +17,8 @@ public class MatriculaModalidade {
 
     @Column(name = "data_fim")
     private LocalDate dataFim;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "matricula_id")
+    private Matricula matricula;
 }

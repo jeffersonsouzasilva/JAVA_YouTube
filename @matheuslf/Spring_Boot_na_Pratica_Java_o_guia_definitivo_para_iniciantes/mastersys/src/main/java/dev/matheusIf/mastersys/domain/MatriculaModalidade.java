@@ -30,7 +30,7 @@ public class MatriculaModalidade {
     @JoinColumn(name = "graduacao_id")
     private Graduacao graduacao;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "plano_id")
-//    private Plano plano;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "plano_id")
+    private Plano plano;
 }

@@ -33,4 +33,13 @@ public class MatriculaModalidade {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "plano_id")
     private Plano plano;
+
+    @PrePersist
+    public void prePersist(){
+        if(dataInicio == null){
+            dataInicio = LocalDate.now();
+        }
+    }
+
+    //Getter e Setter
 }

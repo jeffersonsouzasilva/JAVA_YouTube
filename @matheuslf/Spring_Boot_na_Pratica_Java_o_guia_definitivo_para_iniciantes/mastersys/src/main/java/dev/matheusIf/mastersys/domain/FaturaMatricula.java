@@ -1,10 +1,17 @@
 package dev.matheusIf.mastersys.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "faturas_matriculas")
 public class FaturaMatricula {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "data_vencimento")
+    private LocalDate dataVencimento;
 
 }

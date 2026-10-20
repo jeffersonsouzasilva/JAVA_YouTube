@@ -2,6 +2,7 @@ package dev.matheusIf.mastersys.domain;
 
 import jakarta.persistence.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -13,5 +14,7 @@ public class FaturaMatricula {
 
     @Column(name = "data_vencimento")
     private LocalDate dataVencimento;
+
+    private BigDecimal valor;
 
 }

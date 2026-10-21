@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "faturas_matriculas")
@@ -16,5 +17,8 @@ public class FaturaMatricula {
     private LocalDate dataVencimento;
 
     private BigDecimal valor;
+
+    @Column(name = "data_pagemento")
+    private LocalDateTime dataPagamento;
 
 }

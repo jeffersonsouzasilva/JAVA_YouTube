@@ -21,4 +21,7 @@ public class FaturaMatricula {
     @Column(name = "data_pagemento")
     private LocalDateTime dataPagamento;
 
+    @Column(name = "data_cancelamento")
+    private LocalDate dataCancelamento;
+
 }

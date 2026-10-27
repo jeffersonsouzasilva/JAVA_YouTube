@@ -1,5 +1,6 @@
 package dev.matheusIf.mastersys.domain;
 
+import dev.matheusIf.mastersys.domain.enums.StatusFatura;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -24,4 +25,10 @@ public class FaturaMatricula {
     @Column(name = "data_cancelamento")
     private LocalDate dataCancelamento;
 
+    @Enumerated(EnumType.STRING)
+    private StatusFatura status = StatusFatura.ABERTA;
+
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "matricula_id")
+//    private Matricula matricula;
 }

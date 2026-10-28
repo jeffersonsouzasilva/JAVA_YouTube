@@ -28,7 +28,8 @@ public class FaturaMatricula {
     @Enumerated(EnumType.STRING)
     private StatusFatura status = StatusFatura.ABERTA;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "matricula_id")
-//    private Matricula matricula;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "matricula_id")
+    private Matricula matricula;
+
 }

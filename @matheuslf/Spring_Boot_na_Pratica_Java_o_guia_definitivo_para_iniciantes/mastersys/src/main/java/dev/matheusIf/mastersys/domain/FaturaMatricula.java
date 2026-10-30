@@ -32,7 +32,7 @@ public class FaturaMatricula {
     @JoinColumn(name = "matricula_id")
     private Matricula matricula;
 
-    
+
     public Long getId() {
         return id;
     }

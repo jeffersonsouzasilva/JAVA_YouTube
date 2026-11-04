@@ -2,6 +2,8 @@ package dev.matheusIf.mastersys.domain;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "assiduidade")
 public class Assiduidade {
@@ -10,5 +12,6 @@ public class Assiduidade {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+    @Column(name = "data_entrada")
+    private LocalDateTime dataEntrada;
 }

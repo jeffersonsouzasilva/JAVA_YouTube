@@ -14,4 +14,7 @@ public class Assiduidade {
 
     @Column(name = "data_entrada")
     private LocalDateTime dataEntrada;
+
+    @Column(name = "data_saida")
+    private LocalDateTime dataSaida;
 }

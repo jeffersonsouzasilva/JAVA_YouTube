@@ -17,4 +17,8 @@ public class Assiduidade {
 
     @Column(name = "data_saida")
     private LocalDateTime dataSaida;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "matricula_id")
+    private Matricula matricula;
 }

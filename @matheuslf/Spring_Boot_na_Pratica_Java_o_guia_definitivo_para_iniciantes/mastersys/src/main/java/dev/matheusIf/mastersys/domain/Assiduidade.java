@@ -21,4 +21,13 @@ public class Assiduidade {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "matricula_id")
     private Matricula matricula;
+
+    @PrePersist
+    public void prePersist(){
+        if (dataEntrada == null){
+            dataEntrada = LocalDateTime.now();
+        }
+    }
+
+
 }

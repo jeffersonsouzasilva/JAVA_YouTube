@@ -1,4 +1,8 @@
 package dev.matheusIf.mastersys.repository;
 
-public interface AlunoRepository {
+import dev.matheusIf.mastersys.domain.Aluno;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AlunoRepository extends JpaRepository<Aluno, Long> {
+
 }

@@ -1,4 +1,8 @@
 package dev.matheusIf.mastersys.repository;
 
-public interface FaturaMatriculaRepository {
+import dev.matheusIf.mastersys.domain.FaturaMatricula;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FaturaMatriculaRepository extends JpaRepository<FaturaMatricula,Long> {
+
 }

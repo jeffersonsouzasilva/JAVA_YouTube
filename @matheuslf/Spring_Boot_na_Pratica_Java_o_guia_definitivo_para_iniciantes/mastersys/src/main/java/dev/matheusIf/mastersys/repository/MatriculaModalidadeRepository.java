@@ -1,0 +1,7 @@
+package dev.matheusIf.mastersys.repository;
+
+import dev.matheusIf.mastersys.domain.MatriculaModalidade;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MatriculaModalidadeRepository{
+}
